@@ -35,10 +35,10 @@ def image_predict():
     else:
         obstacle_id = "default"  # or handle the case differently
     constituents = file.filename.split("_")
-    #obstacle_id = constituents[1]
+    obstacle_id = constituents[1]
 
     ## Week 8 ## 
-    #signal = constituents[2].strip(".jpg")
+    signal = constituents[2].strip(".jpg")
     image_id = predict_image(filename, model, signal)
 
     ## Week 9 ## 
