@@ -5,7 +5,7 @@ import os
 url = "http://localhost:5000/image"
 
 # Path to the images folder
-images_folder = "C:/Users/DELL G15/Desktop/SCHOOL/MDP/mdp/YOLOv5_Inference_Server/images"
+images_folder = "C:/Users/DELL G15/Desktop/SCHOOL/MDP/mdp/YOLOv5_Inference_Server/uploads"
 
 # Get a list of all image files in the folder
 image_files = [f for f in os.listdir(images_folder) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]

@@ -9,6 +9,10 @@ app = Flask(__name__)
 CORS(app)
 model = load_model()
 #model = None
+if not os.path.exists('uploads'):
+    os.makedirs('uploads')
+if not os.path.exists('runs'):
+    os.makedirs('runs')
 @app.route('/status', methods=['GET'])
 def status():
     """
